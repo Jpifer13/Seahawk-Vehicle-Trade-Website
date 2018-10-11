@@ -1,0 +1,292 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #368BC1;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	 top: 20%;
+}
+
+h1, h2 {
+    margin: 0 0 10px 0;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #368BC1;
+}
+
+h2 {
+    font-size: 140%;
+	margin-top: 200px;
+}
+
+
+p {
+    margin: 0 auto 1em 0;
+    padding: 0 20px;
+    font-size: 85%;
+    line-height: 1.4;
+}
+
+
+header {
+    position: absolute;
+    top: -100px;
+}
+
+
+
+
+#wrapper {
+	padding:150px 0 150px;
+	background: #ffffff url(../images/bg2.jpg) repeat;
+	background-size: 100%, 100%;
+	width:900px;
+	margin:0 auto;
+	position:relative;
+	border-left: 1px solid #A4C8D8;
+	border-right: 1px solid #A4C8D8;
+	min-height:1000px;
+}
+
+#nav {
+    position: absolute;
+    top: 25%;
+    left: 50px;
+    width: 90px;
+}
+
+ul#nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav a {
+    display: block;
+    width: 105px;
+    padding-left: 10px;
+    margin: 3px 0;
+    text-decoration: none;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+#nav a:link, #nav a:visited {
+    border-left: #00425E solid 10px;
+    color: #368BC1;
+}
+
+#nav a:hover, #nav a:active {
+    border-left-color: #fff;
+    background-color: #00425E;
+    color: #fff;
+}
+
+/* The here ID identifies the current page and applies a white stripe to the left as a visual indicator. */
+
+a#here {
+    border-left-color: #fff !important;
+    background-color: #000080 !important;
+    color: #fff !important;
+}
+
+/* The maincontent div has zero top and bottom margins. The right margin is 10% of page width to give breathing space on the right.
+ * The left margin is set at 190px to make room for the navigation menu. Minimum and maximum widths are set to keep the layout flexible. */
+
+main {
+   /* margin: 0 10% 0 190px;*/
+   position: absolute;
+	top: 50px;
+	margin-left: 30%;
+	margin-right: 0;
+	padding-bottom: 6rem;
+   /* min-width: 525px;
+    max-width: 640px;
+	*/
+	
+}
+
+/* Styles for links in the maincontent div. */
+
+main a {
+    font-weight: bold;
+    text-decoration: none;
+    padding: 2px 4px;
+}
+
+main a:link, main a:visited {
+    color: #00425E;
+    border-bottom: #00425E dashed 1px;
+}
+
+main a:hover, main a:active {
+    color: #fff;
+    background-color: #00425E;
+    border-bottom: none;
+}
+
+/* The figure is for the random image on the front page. It floats to the right with a 20px right margin and a 10px left one. */
+
+figure {
+    float: right;
+    margin: 0 20px 0 10px;
+}
+
+/* Border and background color for the random image. */
+
+figure img {
+    padding: 10px;
+    -webkit-box-shadow: 1px 1px 15px #999999;
+    box-shadow: 1px 1px 15px #999999;
+}
+
+/* The caption on the front page is bold and centered. */
+
+figcaption {
+    margin: 0;
+    padding: 3px 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* The footer needs to appear below anything that is floated, so clear: both is added to the rule. */
+
+footer {
+	clear: both;
+	background-color: #368BC1;
+	color: #FFF;
+	padding:12px;
+	width:876px;
+	position:absolute;
+	right: 0;
+	left: 0;
+	bottom:0;
+}
+
+footer p {
+	margin-bottom:0;
+	font-size: 90%;
+	font-weight:bold;
+}
+
+/* Styles for the contact form. */
+
+form {
+    margin: 0 0 0 20px;
+}
+
+form h2 {
+    color: #368BC1;
+    font-size: 80%;
+    font-weight: bold;
+    margin: 0 0 5px 10px;
+}
+
+form p {
+    margin: 0 0 5px 0;
+}
+
+input[type="text"], input[type="email"] {
+    width: 250px;
+}
+
+textarea {
+    width: 500px;
+    height: 125px;
+}
+
+fieldset {
+    border: none;
+}
+
+/* Setting display to block forces the label for each form element onto a line of its own. */
+
+label {
+    font-weight: bold;
+    color: #368BC1;
+    display: block;
+}
+
+
+/* This needs to be overridden for the subscribe, interests, and terms labels, so display is reset to inline. */
+
+#subscribe label, #interests label, label[for="terms"] {
+    display: inline;
+    padding: 0 20px 0 3px;
+	color: #368BC1;
+}
+
+#interests div {
+    float: left;
+	color: #368BC1;
+}
+
+/* The warning class makes the error messages on the feedback form bold and red. */
+
+.warning {
+    font-weight: bold;
+    color: #f00;
+}
+
+/* Styles for the image gallery. */
+
+#picCount {
+  color:#00425E;
+  font-weight:bold;
+  }
+
+#thumbs {
+    float: left;
+    margin-top: 10px;
+}
+
+#thumbs td {
+    text-align: center;
+}
+
+#thumbs img {
+    border: none;
+	display:block;
+}
+
+#thumbs a:link, #thumbs a:visited, #thumbs a:hover, #thumbs a:active {
+    border: none;
+    padding: 0;
+}
+
+#main_image {
+    float: right;
+    text-align: center;
+    width: 350px;
+}
+
+#main_image p {
+   color:#00425E;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for the cart */
+
+#cart_header th {
+    border-bottom: 2px solid black;
+}
+#cart_footer td {
+    text-align: right;
+    border-top: 2px solid black;
+}
+
+/* the styles for the classes */
+.right {
+    text-align: right;
+}
+.left {
+    text-align: left;
+}
+
+.cart_qty {
+    text-align: right;
+    width: 8em;
+}
+

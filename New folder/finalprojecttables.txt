@@ -1,0 +1,46 @@
+drop table if exists SRV_contacts;# MySQL returned an empty result set (i.e. zero rows).
+# MySQL returned an empty result set (i.e. zero rows).
+
+
+create table SRV_contacts(firstName varchar(15), lastName varchar(15), emailAddr varchar(30), phone int(10), comments varchar(150), primary key (emailAddr))engine = innodb;# MySQL returned an empty result set (i.e. zero rows).
+# MySQL returned an empty result set (i.e. zero rows).
+# MySQL returned an empty result set (i.e. zero rows)
+
+drop table if exists SRV_register;# MySQL returned an empty result set (i.e. zero rows).
+
+
+create table SRV_register(firstName varchar(15), lastName varchar(15), email varchar(30), 
+password varchar(255), phone int(10), folder varchar(30),
+primary key (email))engine = innodb;# MySQL returned an empty result set (i.e. zero rows)
+
+drop table if exists SRV_images;# MySQL returned an empty result set (i.e. zero rows).
+# MySQL returned an empty result set (i.e. zero rows).
+
+
+create table SRV_images(email varchar(30), filename varchar(20), filetype varchar(10),imageID int(2) not null auto_increment, primary key (imageID))engine = innodb# MySQL returned an empty result set (i.e. zero rows)
+
+# MySQL returned an empty result set (i.e. zero rows)
+
+drop table if exists SRV_trades;
+
+create table SRV_trades(imageID int(2) auto_increment, owner_email varchar(30), filename varchar(20), details varchar(50),
+primary key(imageID)) engine = innodb; 
+
+insert into SRV_trades (imageID, owner_email, filename, details) values 
+(0, 'jakepifer3@gmail.com', 'alpaca.jpg', 'This ones name is Twighlight...For obvious reasons'),
+(0, 'jakepifer3@gmail.com', 'alpaca1.jpg', 'Careful this one bites!'),
+(0, 'jakepifer3@gmail.com', 'alpaca2.jpg', 'This is Napolean Dynomite.'),
+(0, 'jakepifer3@gmail.com', 'bike.jpg', 'You no ride bike, bike ride you!!'),
+(0, 'jakepifer3@gmail.com', 'bike1.jpg', 'The never ending ride.');
+
+drop table if exists SRV_tradeRequests;# MySQL returned an empty result set (i.e. zero rows).
+
+
+create table SRV_tradeRequests(owner_email varchar(30), trader_email varchar(30),
+trader_name varchar(20), imageID int(2) not null, comments varchar(150)) engine = innodb;# MySQL returned an empty result set (i.e. zero rows)
+
+drop table if exists SRV_accepted;# MySQL returned an empty result set (i.e. zero rows).
+
+
+create table SRV_accepted(tradeNO int(2) auto_increment, owner varchar(30), trader varchar(30), imageID int(2),primary key (tradeNO)) engine = innodb;# MySQL returned an empty result set (i.e. zero rows)
+
