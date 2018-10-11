@@ -27,11 +27,11 @@ create table SRV_trades(imageID int(2) auto_increment, owner_email varchar(30), 
 primary key(imageID)) engine = innodb; 
 
 insert into SRV_trades (imageID, owner_email, filename, details) values 
-(0, 'jakepifer3@gmail.com', 'alpaca.jpg', 'This ones name is Twighlight...For obvious reasons'),
-(0, 'jakepifer3@gmail.com', 'alpaca1.jpg', 'Careful this one bites!'),
-(0, 'jakepifer3@gmail.com', 'alpaca2.jpg', 'This is Napolean Dynomite.'),
-(0, 'jakepifer3@gmail.com', 'bike.jpg', 'You no ride bike, bike ride you!!'),
-(0, 'jakepifer3@gmail.com', 'bike1.jpg', 'The never ending ride.');
+(0, 'email@gmail.com', 'alpaca.jpg', 'This ones name is Twighlight...For obvious reasons'),
+(0, 'email@gmail.com', 'alpaca1.jpg', 'Careful this one bites!'),
+(0, 'email@gmail.com', 'alpaca2.jpg', 'This is Napolean Dynomite.'),
+(0, 'email@gmail.com', 'bike.jpg', 'You no ride bike, bike ride you!!'),
+(0, 'email@gmail.com', 'bike1.jpg', 'The never ending ride.');
 
 drop table if exists SRV_tradeRequests;# MySQL returned an empty result set (i.e. zero rows).
 
